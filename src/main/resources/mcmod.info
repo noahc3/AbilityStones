@@ -1,0 +1,18 @@
+[
+{
+  "modid": "abilstones",
+  "name": "Ability Stones",
+  "description": "Adds stones to the game which give the player special abilities.",
+  "credits": "\n - Made by noahc3\n - @ShadowfactsDev (twitter) for the great introductory forge tutorials\n - Thanks to Botania source (Vazkii & williewillus) for helping with JEI implementation",
+  "logoFile": "/assets/abilstones/logo.png",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "https://minecraft.curseforge.com/projects/ability-stones-mod",
+  "authorList": [ "noahc3" ],
+  "screenshots": [],
+  "dependencies": [
+     "mod_MinecraftForge"
+  ]
+}
+]
