@@ -17,7 +17,7 @@ public class ItemSaturationStone extends ItemAbilityStoneBase {
         EntityPlayer player = (EntityPlayer)entity;
         int foodLevelIn = player.getFoodStats().getFoodLevel() + 1;
 
-        int checkValue = stack.getTagCompound().getInteger("Timer") % 60;
+        long checkValue = player.worldObj.getTotalWorldTime() % 60;
 
         if (checkValue == 1){
 
