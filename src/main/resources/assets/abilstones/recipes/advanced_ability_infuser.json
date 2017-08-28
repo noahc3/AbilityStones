@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CWC",
+		"CCC",
+		"NCN"
+	],
+	"key": {
+		"C": {
+			"item": "minecraft:cobble_stone"
+		},
+		"W": {
+			"item": "minecraft:cobble_stone"
+		},
+		"M": {
+			"item": "abilitystones:magical_dust"
+		},
+		"I": {
+			"item": "abilitystones:ability_infuser"
+		}
+	},
+	"result": {
+		"item": "abilitystones:advanced_ability_infuser"
+	}
+}	

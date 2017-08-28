@@ -1,0 +1,12 @@
+{
+	"forge_marker": 1,
+	"variants": {
+		"normal": {
+			"model": "abilstones:advanced_ability_infuser"
+		},
+		"inventory": {
+			"model": "abilstones:advanced_ability_infuser",
+			"transform": "forge:default-block"
+		}
+	}
+}

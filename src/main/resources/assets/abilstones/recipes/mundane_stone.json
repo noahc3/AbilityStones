@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CSC",
+		"SMS",
+		"CSC"
+	],
+	"key": {
+		"C": {
+			"item": "minecraft:cobble_stone"
+		},
+		"S": {
+			"item": "minecraft:stone"
+		},
+		"M": {
+			"item": "abilitystones:magical_dust"
+		}
+	},
+	"result": {
+		"item": "abilitystones:mundane_stone"
+	}
+}	
