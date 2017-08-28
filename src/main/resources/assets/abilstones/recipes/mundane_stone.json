@@ -7,16 +7,17 @@
 	],
 	"key": {
 		"C": {
-			"item": "minecraft:cobble_stone"
+			"item": "minecraft:cobblestone"
 		},
 		"S": {
-			"item": "minecraft:stone"
+			"item": "minecraft:stone",
+			"data": 0
 		},
 		"M": {
-			"item": "abilitystones:magical_dust"
+			"item": "abilstones:magical_dust"
 		}
 	},
 	"result": {
-		"item": "abilitystones:mundane_stone"
+		"item": "abilstones:mundane_stone"
 	}
 }	

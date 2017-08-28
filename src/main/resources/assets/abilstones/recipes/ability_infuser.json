@@ -3,20 +3,20 @@
 	"pattern": [
 		"CWC",
 		"CCC",
-		"NCN"
+		"MCM"
 	],
 	"key": {
 		"C": {
-			"item": "minecraft:cobble_stone"
+			"item": "minecraft:cobblestone"
 		},
 		"W": {
 			"item": "minecraft:water_bucket"
 		},
 		"M": {
-			"item": "abilitystones:magical_dust"
+			"item": "abilstones:magical_dust"
 		}
 	},
 	"result": {
-		"item": "abilitystones:ability_inuser"
+		"item": "abilstones:ability_infuser"
 	}
 }
