@@ -139,7 +139,7 @@ public class ItemAdvancedAbilityStone extends Item implements ItemModelProvider{
         EntityPlayer player = (EntityPlayer)entity;
         int foodLevelIn = player.getFoodStats().getFoodLevel() + 1;
 
-        int checkValue = stack.getTagCompound().getInteger("Timer") % 60;
+        long checkValue = player.world.getTotalWorldTime() % 60;
 
         if (checkValue == 1){
 
