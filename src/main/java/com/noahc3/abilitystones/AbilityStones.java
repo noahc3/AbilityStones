@@ -28,7 +28,7 @@ public class AbilityStones {
 
     public static final String modID = "abilstones";
     public static final String name = "Ability Stones";
-    public static final String version = "12.2.0.0 beta 3";
+    public static final String version = "12.2.0.0";
 
     public static final AbilityStonesTab creativeTab = new AbilityStonesTab();
 
