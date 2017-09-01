@@ -1,4 +1,4 @@
-# Ability Stones ![](https://cf.way2muchnoise.eu/full_ability-stones-mod_downloads.svg) ![](https://img.shields.io/badge/Supported%20MC%20Versions-1.10.2%20%7C%201.11.2%20%7C%201.12.1-orange.svg?colorA=E04E14&colorB=2D2D2D)
+# Ability Stones ![](http://cf.way2muchnoise.eu/full_ability-stones-mod_downloads.svg) ![](https://img.shields.io/badge/Supported%20MC%20Versions-1.10.2%20%7C%201.11.2%20%7C%201.12.1-orange.svg?colorA=E04E14&colorB=2D2D2D)
 ### Releases (MC 1.8-1.12): [CurseForge](https://minecraft.curseforge.com/projects/ability-stones-mod)
 
 ## What is This?
