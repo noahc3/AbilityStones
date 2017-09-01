@@ -3,7 +3,7 @@
   "modid": "abilstones",
   "name": "Ability Stones",
   "description": "Adds stones to the game which give the player special abilities.",
-  "credits": "\n - Made by noahc3\n - @ShadowfactsDev (twitter) for the great introductory forge tutorials\n - Thanks to Botania source (Vazkii & williewillus) for helping with JEI implementation",
+  "credits": "\n - Made by noahc3\n - @ShadowfactsDev (twitter) for the great introductory forge tutorials\n - Thanks to Botania source (Vazkii & williewillus) for helping with JEI implementation\n - TheGreyGhost for his in depth list of changes to the Forge API from 1.10 to 1.11",
   "logoFile": "/assets/abilstones/logo.png",
   "version": "${version}",
   "mcversion": "${mcversion}",
