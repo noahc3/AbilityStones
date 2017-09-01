@@ -1,5 +1,4 @@
-# Ability Stones
-
+# Ability Stones ![](https://cf.way2muchnoise.eu/full_ability-stones-mod_downloads.svg) ![](https://img.shields.io/badge/Supported%20MC%20Versions-1.10.2%20%7C%201.11.2%20%7C%201.12.1-orange.svg?colorA=E04E14&colorB=2D2D2D)
 ### Releases (MC 1.8-1.12): [CurseForge](https://minecraft.curseforge.com/projects/ability-stones-mod)
 
 ## What is This?
@@ -9,13 +8,15 @@ useful things like item repair.
 
 ## Feature Information
 
-Please view [the wiki](https://github.com/noahc3/AbilityStones/wiki) for information on the mods game mechanics.
+Please view [the wiki](https://github.com/noahc3/AbilityStones/wiki) for information on the mods game mechanics. The mod also features full [JEI](https://minecraft.curseforge.com/projects/just-enough-items-jei) integration for all crafting recipes and infusions.
 
 ## Links
 
-* Twitter: [@noahcuroe](https://www.twitter.com/noahcuroe)
 * Wiki: [GitHub Wiki](https://github.com/noahc3/AbilityStones/wiki)
 * Releases: [CurseForge](https://minecraft.curseforge.com/projects/ability-stones-mod)
+
+## Contributing
+Please report bugs on the Github [issue tracker](https://github.com/noahc3/AbilityStones/issues), making sure to include the game log, crash report (if applicable), and steps to reproduce the issue (if possible). I'd also love to hear suggestions on how to improve or expand the mods features, you can leave those in the [issue tracker](https://github.com/noahc3/AbilityStones/issues) as well. Pull requests are welcome as long as they actually improve something (I know my code is kind of a mess so cleanup PRs are appreciated, though I'll get around to it myself *soon*™).
 
 ## Development Setup
 
