@@ -14,6 +14,7 @@ import com.noahc3.abilitystones.recipe.AdvancedInfuserCraftingManager;
 import com.noahc3.abilitystones.recipe.InfuserCraftingManager;
 import com.noahc3.abilitystones.recipe.ItemGroup;
 
+import javax.annotation.Nonnull;
 import java.util.ArrayList;
 
 public class OutputSlot extends SlotItemHandler {
@@ -34,6 +35,7 @@ public class OutputSlot extends SlotItemHandler {
 
 
     @Override
+    @MethodsReturnNonnullByDefault
     public ItemStack onTake(EntityPlayer playerIn, ItemStack stack){
 
         this.onSlotChanged();
@@ -240,7 +242,7 @@ public class OutputSlot extends SlotItemHandler {
     }
 
     @Override
-    public boolean isItemValid( final ItemStack par1ItemStack ) {
+    public boolean isItemValid( @Nonnull final ItemStack par1ItemStack ) {
 
         return false;
     }

@@ -1,9 +1,9 @@
 package com.noahc3.abilitystones.block.advancedAbilityInfuser;
 
-import com.noahc3.abilitystones.AbilityStones;
 import com.noahc3.abilitystones.item.ModItems;
 import com.noahc3.abilitystones.recipe.AdvancedInfuserCraftingManager;
 import jline.internal.Nullable;
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;
@@ -15,6 +15,7 @@ import net.minecraftforge.items.ItemStackHandler;
 import com.noahc3.abilitystones.recipe.ItemGroup;
 import com.noahc3.abilitystones.recipe.Result;
 
+import javax.annotation.Nonnull;
 import java.util.ArrayList;
 
 public class TileEntityAdvancedAbilityInfuser extends TileEntity implements ITickable {
@@ -30,6 +31,7 @@ public class TileEntityAdvancedAbilityInfuser extends TileEntity implements ITic
     }
 
     @Override
+    @MethodsReturnNonnullByDefault
     public NBTTagCompound writeToNBT(NBTTagCompound compound) {
         compound.setTag("inventory", inventory.serializeNBT());
         return super.writeToNBT(compound);
@@ -42,12 +44,12 @@ public class TileEntityAdvancedAbilityInfuser extends TileEntity implements ITic
     }
 
     @Override
-    public boolean hasCapability(Capability<?> capability, @Nullable EnumFacing facing) {
+    public boolean hasCapability(@Nonnull Capability<?> capability, @Nullable EnumFacing facing) {
         return capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY || super.hasCapability(capability, facing);
     }
     @Nullable
     @Override
-    public <T> T getCapability(Capability<T> capability, @Nullable EnumFacing facing) {
+    public <T> T getCapability(@Nonnull Capability<T> capability, @Nullable EnumFacing facing) {
         return capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY ? (T)inventory : super.getCapability(capability, facing);
     }
 
@@ -64,13 +66,13 @@ public class TileEntityAdvancedAbilityInfuser extends TileEntity implements ITic
         ItemStack slot3 = inventory.getStackInSlot(3);
         ItemStack slot4 = inventory.getStackInSlot(4);
         ItemStack slot5 = inventory.getStackInSlot(5);
-        ItemStack slot6 = inventory.getStackInSlot(6);
+        //ItemStack slot6 = inventory.getStackInSlot(6);
 
         ItemStack result = ItemStack.EMPTY;
 
         if(ItemStack.areItemsEqual(new ItemStack(ModItems.mundaneStone), slot5)) {
 
-            if(!(slot2 == null)) {
+            if(!(slot2 == ItemStack.EMPTY)) {
 
                 Result returned = AdvancedInfuserCraftingManager.getResult(1, slot2.getCount(), this, slot0, slot1, slot3, slot4);
 

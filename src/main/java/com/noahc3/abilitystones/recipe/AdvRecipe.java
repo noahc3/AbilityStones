@@ -6,7 +6,7 @@ public class AdvRecipe {
 
     public String output;
     public int dustCost;
-    public ArrayList<ItemGroup> recipe = new ArrayList();
+    public ArrayList<ItemGroup> recipe = new ArrayList<>();
 
     public AdvRecipe(String output, int dustCost, ItemGroup ... itemGroups) {
 

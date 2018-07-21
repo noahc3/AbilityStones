@@ -1,5 +1,6 @@
 package com.noahc3.abilitystones.integration.jei.advancedInfuser;
 
+import mcp.MethodsReturnNonnullByDefault;
 import mezz.jei.api.IGuiHelper;
 import mezz.jei.api.gui.IDrawable;
 import mezz.jei.api.gui.IGuiItemStackGroup;
@@ -12,6 +13,7 @@ import net.minecraft.util.ResourceLocation;
 import com.noahc3.abilitystones.AbilityStones;
 import com.noahc3.abilitystones.block.ModBlocks;
 
+import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.List;
 
 public class AdvancedInfuserRecipeCategory extends BlankRecipeCategory<AdvancedInfuserRecipeWrapper>{
@@ -35,21 +37,25 @@ public class AdvancedInfuserRecipeCategory extends BlankRecipeCategory<AdvancedI
     }
 
     @Override
+    @MethodsReturnNonnullByDefault
     public String getUid() {
         return "abilitystones.advancedinfusing";
     }
 
     @Override
+    @MethodsReturnNonnullByDefault
     public String getTitle() {
         return localizedName;
     }
 
     @Override
+    @MethodsReturnNonnullByDefault
     public IDrawable getBackground() {
         return background;
     }
 
     @Override
+    @ParametersAreNonnullByDefault
     public void setRecipe(IRecipeLayout recipeLayout, AdvancedInfuserRecipeWrapper recipeWrapper, IIngredients ingredients) {
         IGuiItemStackGroup guiItemStacks = recipeLayout.getItemStacks();
 
@@ -77,6 +83,7 @@ public class AdvancedInfuserRecipeCategory extends BlankRecipeCategory<AdvancedI
     }
 
     @Override
+    @MethodsReturnNonnullByDefault
     public String getModName() {
         return "Ability Stones";
     }

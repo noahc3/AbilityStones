@@ -3,6 +3,7 @@ package com.noahc3.abilitystones.block.abilityInfuser;
 import com.noahc3.abilitystones.AbilityStones;
 import com.noahc3.abilitystones.guisupport.ModGuiHandler;
 import jline.internal.Nullable;
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.item.EntityItem;
@@ -19,6 +20,8 @@ import net.minecraft.world.World;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import com.noahc3.abilitystones.block.BlockTileEntity;
+
+import javax.annotation.ParametersAreNonnullByDefault;
 
 public class BlockAbilityInfuser extends BlockTileEntity<TileEntityAbilityInfuser> {
 
@@ -48,12 +51,14 @@ public class BlockAbilityInfuser extends BlockTileEntity<TileEntityAbilityInfuse
     }
 
     @Override
+    @MethodsReturnNonnullByDefault
     public BlockRenderLayer getBlockLayer() {
         return BlockRenderLayer.CUTOUT;
     }
 
     @Override
     @Deprecated
+    @MethodsReturnNonnullByDefault
     public EnumBlockRenderType getRenderType(IBlockState state) {
         return EnumBlockRenderType.MODEL;
     }
@@ -71,12 +76,13 @@ public class BlockAbilityInfuser extends BlockTileEntity<TileEntityAbilityInfuse
     }
 
     @Override
+    @ParametersAreNonnullByDefault
     public void breakBlock(World world, BlockPos pos, IBlockState state) {
         TileEntityAbilityInfuser tile = getTileEntity(world, pos);
         IItemHandler itemHandler = tile.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, EnumFacing.NORTH);
         for (int i = 0; i < 4; i++) {
             ItemStack stack = itemHandler.getStackInSlot(i);
-            if (stack != null) {
+            if (stack != ItemStack.EMPTY) {
                 EntityItem item = new EntityItem(world, pos.getX(), pos.getY(), pos.getZ(), stack);
                 world.spawnEntity(item);
             }

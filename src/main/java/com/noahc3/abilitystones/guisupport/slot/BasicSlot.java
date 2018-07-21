@@ -5,6 +5,8 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.SlotItemHandler;
 
+import javax.annotation.Nonnull;
+
 public class BasicSlot extends SlotItemHandler {
 
     private TileEntity tileEntity;
@@ -20,7 +22,7 @@ public class BasicSlot extends SlotItemHandler {
     }
 
     @Override
-    public boolean isItemValid( final ItemStack par1ItemStack ) {
+    public boolean isItemValid( @Nonnull final ItemStack par1ItemStack ) {
         return true;
     }
 }

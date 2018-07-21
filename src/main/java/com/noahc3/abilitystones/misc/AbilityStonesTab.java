@@ -4,12 +4,13 @@ import com.noahc3.abilitystones.AbilityStones;
 import com.noahc3.abilitystones.block.ModBlocks;
 import com.noahc3.abilitystones.item.ModItems;
 import com.noahc3.abilitystones.recipe.InfuserCraftingManager;
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 
-import java.util.List;
+import javax.annotation.ParametersAreNonnullByDefault;
 
 public class AbilityStonesTab extends CreativeTabs {
 
@@ -18,6 +19,7 @@ public class AbilityStonesTab extends CreativeTabs {
     }
 
     @Override
+    @MethodsReturnNonnullByDefault
     public ItemStack getTabIconItem() {
         return new ItemStack(ModItems.regenerationStone);
     }
@@ -28,6 +30,7 @@ public class AbilityStonesTab extends CreativeTabs {
     }
 
     @Override
+    @ParametersAreNonnullByDefault
     public void displayAllRelevantItems(NonNullList<ItemStack> list) {
 
         list.add(new ItemStack(ModItems.magicalDust));

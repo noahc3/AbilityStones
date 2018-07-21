@@ -4,6 +4,7 @@ import com.mojang.realmsclient.gui.ChatFormatting;
 import com.noahc3.abilitystones.AbilityStones;
 import com.noahc3.abilitystones.misc.ItemModelProvider;
 import com.noahc3.abilitystones.recipe.InfuserCraftingManager;
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -45,6 +46,7 @@ public class ItemAbilityStoneBase extends Item {
     /* NBT and Effect stuff */
 
     @Override
+    @MethodsReturnNonnullByDefault
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
         ItemStack stack = playerIn.getHeldItem(hand);

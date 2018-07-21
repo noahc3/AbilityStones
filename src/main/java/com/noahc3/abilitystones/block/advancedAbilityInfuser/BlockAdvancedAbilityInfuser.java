@@ -4,6 +4,7 @@ import com.noahc3.abilitystones.AbilityStones;
 import com.noahc3.abilitystones.block.ModBlocks;
 import com.noahc3.abilitystones.guisupport.ModGuiHandler;
 import jline.internal.Nullable;
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
@@ -24,13 +25,12 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import com.noahc3.abilitystones.block.BlockTileEntity;
 
+import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.Random;
 
 public class BlockAdvancedAbilityInfuser extends BlockTileEntity<TileEntityAdvancedAbilityInfuser> {
 
     public BlockAdvancedAbilityInfuser(String name) {
-
-
         super(Material.ROCK, name);
         this.setHardness(2.0f);
         this.setResistance(5.0f);
@@ -65,6 +65,7 @@ public class BlockAdvancedAbilityInfuser extends BlockTileEntity<TileEntityAdvan
     }
 
     @Override
+    @MethodsReturnNonnullByDefault
     public BlockRenderLayer getBlockLayer() {
         return BlockRenderLayer.CUTOUT;
     }
@@ -122,12 +123,13 @@ public class BlockAdvancedAbilityInfuser extends BlockTileEntity<TileEntityAdvan
     }
 
     @Override
+    @ParametersAreNonnullByDefault
     public void breakBlock(World world, BlockPos pos, IBlockState state) {
         TileEntityAdvancedAbilityInfuser tile = getTileEntity(world, pos);
         IItemHandler itemHandler = tile.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, EnumFacing.NORTH);
         for (int i = 0; i < 7; i++) {
             ItemStack stack = itemHandler.getStackInSlot(i);
-            if (stack != null) {
+            if (stack != ItemStack.EMPTY) {
                 EntityItem item = new EntityItem(world, pos.getX(), pos.getY(), pos.getZ(), stack);
                 world.spawnEntity(item);
             }
@@ -147,6 +149,7 @@ public class BlockAdvancedAbilityInfuser extends BlockTileEntity<TileEntityAdvan
     }
 
     @Override
+    @MethodsReturnNonnullByDefault
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
         if (this == ModBlocks.advancedAbilityInfuserTop) {
             return null;

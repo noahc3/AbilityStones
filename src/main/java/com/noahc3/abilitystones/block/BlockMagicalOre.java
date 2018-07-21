@@ -1,5 +1,6 @@
 package com.noahc3.abilitystones.block;
 
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.item.Item;
 import com.noahc3.abilitystones.item.ModItems;
@@ -14,6 +15,7 @@ public class BlockMagicalOre extends BlockOre{
     }
 
     @Override
+    @MethodsReturnNonnullByDefault
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
         return ModItems.magicalDust;
     }

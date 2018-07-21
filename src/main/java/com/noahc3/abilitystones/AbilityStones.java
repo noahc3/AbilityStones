@@ -23,12 +23,12 @@ import com.noahc3.abilitystones.recipe.CraftingRecipes;
 import com.noahc3.abilitystones.recipe.InfuserCraftingManager;
 import com.noahc3.abilitystones.world.ModWorldGen;
 
-@Mod(modid = AbilityStones.modID, name = AbilityStones.name, version = AbilityStones.version, acceptedMinecraftVersions = "[1.12, 1.12.1]")
+@Mod(modid = AbilityStones.modID, name = AbilityStones.name, version = AbilityStones.version, acceptedMinecraftVersions = "[1.12.2]")
 public class AbilityStones {
 
     public static final String modID = "abilstones";
     public static final String name = "Ability Stones";
-    public static final String version = "12.2.0.0";
+    public static final String version = "12.2.0.1";
 
     public static final AbilityStonesTab creativeTab = new AbilityStonesTab();
 

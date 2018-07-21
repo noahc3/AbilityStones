@@ -1,6 +1,5 @@
 package com.noahc3.abilitystones.misc;
 
-import com.noahc3.abilitystones.AbilityStones;
 import com.noahc3.abilitystones.item.ModItems;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.SharedMonsterAttributes;

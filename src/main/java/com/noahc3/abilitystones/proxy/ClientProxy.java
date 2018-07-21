@@ -12,10 +12,10 @@ public class ClientProxy extends CommonProxy{
         ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(AbilityStones.modID + ":" + id, "inventory"));
     }
 
-    @Override
-    public String localize(String unlocalized, Object... args) {
-        return I18n.format(unlocalized, args);
-    }
+    //@Override
+    //public String localize(String unlocalized, Object... args) {
+    //    return I18n.format(unlocalized, args);
+    //}
 
 }
 

@@ -2,6 +2,7 @@ package com.noahc3.abilitystones.item;
 
 import com.mojang.realmsclient.gui.ChatFormatting;
 import com.noahc3.abilitystones.AbilityStones;
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -48,6 +49,7 @@ public class ItemAdvancedAbilityStone extends Item {
     }
 
     @Override
+    @MethodsReturnNonnullByDefault
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand hand)
     {
         ItemStack stack = playerIn.getHeldItem(hand);

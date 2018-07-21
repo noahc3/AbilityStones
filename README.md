@@ -33,6 +33,7 @@ environment.
 
 ## What Minecraft versions are supported?
 
-Minecraft 1.10.2, 1.11.2 and 1.12.1 are the currently supported versions. The primary development version is 1.10.2, and features are ported up to other versions from there.
-
-The original 1.8.9 version of this mod is no longer being updated and is not supported.
+The mod is available for Minecraft 1.12.2, 1.12.1, 1.12, 1.11.2, 1.10.2 and 1.8.9.
+* 1.12.2 is the only fully supported version at this time.
+* 1.10.2, 1.11.2, 1.12 and 1.12.1 are all feature consistent with the 1.12.2 version, but will not receive any updates going forwad
+* 1.8.9 is missing most of the features of Ability Stones 2, will not be updated in the future, and is not supported.

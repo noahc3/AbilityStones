@@ -75,10 +75,7 @@ public class ModItems {
         validStones.add(ModItems.swiftnessStone);
         validStones.add(ModItems.waterBreathingStone);
 
-        if(validStones.contains(stack.getItem())) {
-            return true;
-        }
-        return false;
+        return validStones.contains(stack.getItem());
     }
 
 }
